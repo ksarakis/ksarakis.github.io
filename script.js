@@ -9,7 +9,7 @@ function makeOblique() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
+  const navLinks = document.querySelector('.nav-links');
 
   if (!navToggle || !navLinks) {
     console.error('Navbar elements not found. Check IDs: #navToggle and #navLinks');
