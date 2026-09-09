@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kostis Sarakis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+    <!-- Open Graph / LinkedIn / Discord Previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kostissarakis.github.io/" />
+    <meta property="og:title" content="Kostis Sarakis" />
+    <meta property="og:description" content="ECE student at NTUA" />
+    <meta property="og:image" content="https://kostissarakis.github.io/preview-card.png" />
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">&lt;KostisSarakis /&gt;</a>
+        
+        <!-- Mobile Hamburger Toggle Button -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        </button>
+
+        <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#volunteering">Volunteering</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <main>
+        <!-- Hero / Personal Info Section -->
+        <section class="hero" id="about">
+            <div class="container">
+                <span class="hero-tag">National Technical University of Athens (NTUA)</span>
+                <h1 class="hero-title">Konstantinos (Kostis) Sarakis</h1>
+                <p class="hero-subtitle">
+                    Electrical and Computer Engineering student passioned about robotics, and 
+                    software development. I am currently pursuing my MEng. in Electrical and 
+                    Computer Engineering at National Technical University of Athens (NTUA).
+                </p>
+                <div class="btn-group">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="https://www.linkedin.com/in/konstantinos-sarakis-870705357" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="card project-card">
+                        <div>
+                            <h3 class="card-title">Web-Based Teleoperation Dashboard for ROS2</h3>
+                            <p class="card-text">
+                                Developed a browser-based control interface for ROS2 robots, applying modern web standards to visualize real-time telemetry, monitor sensor topics, and send operational control commands.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">ROS2</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">HTML5/CSS3</span>
+                                <span class="tag">Telemetry</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ksarakis/robot-dashboard-ros2-html-javascript" target="_blank" rel="noopener noreferrer">GitHub Repository &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteering & Activities Section -->
+        <section id="volunteering">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Volunteering & Activities</h2>
+                </div>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2026</div>
+                        <h3 class="card-title">Technical Reviewer — RoboCup International 2026</h3>
+                        <p class="card-text">
+                            Reviewed and evaluated submitted technical materials (Team 
+                            Description Papers, Video Presentations, and Technical Posters) 
+                            for participating Junior division teams.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">October 2025 - June 2026</div>
+                        <h3 class="card-title">αeRAS Flying Team — IEEE NTUA RAS SB</h3>
+                        <p class="card-text">
+                            Contributed to the development of autonomous navigation algorithms 
+                            in Python for a swarm of drones in the context of the ICUAS '26 competition. 
+                            <strong>Secured 2nd place in the finals</strong> held in Corfu.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">ROS2</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Graph Theory</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 2025 - July 2025</div>
+                        <h3 class="card-title">MakerLab Elite Team (former MakerLab ResQ) — MakerLab</h3>
+                        <p class="card-text">
+                            Participated in the design and implementation of a rescue robot for the Robocup Rapidly 
+                            Manufactured Robot Challenge, focusing on navigation, sensor integration and task execution.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">ROS2</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Telemetry</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://cloud.robocup.org/s/SELMHSJd5RydxoB?dir=/&editing=false&openfile=true" target="_blank" rel="noopener noreferrer">Team Description Material &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Collapsible Container -->
+                    <div class="timeline-expandable" id="timelineExpandable" aria-hidden="true">
+                        <div class="timeline-expandable-content">
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date"></div>
+                            <h3 class="card-title"></h3>
+                            <p class="card-text">
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date"></div>
+                            <h3 class="card-title"></h3>
+                            <p class="card-text">
+                            </p>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toggle Button -->
+                <div class="timeline-toggle-wrapper">
+                <button class="btn-timeline-toggle" id="timelineToggleBtn" aria-expanded="false" aria-controls="timelineExpandable">
+                    <span class="toggle-text">Show More Activities</span>
+                    <span class="toggle-icon">↓</span>
+                </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+        <div class="container">
+            <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <p class="hero-subtitle">
+            Feel free to reach out for collaborations, robotics projects, or professional opportunities.
+            </p>
+
+            <div class="contact-form-container">
+            <form class="contact-form" action="https://formspree.io/f/mkolprbj" method="POST">
+                <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            </div>
+
+            <div class="btn-group">
+            <a href="https://www.linkedin.com/in/konstantinos-sarakis-870705357" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn Profile</a>
+            <a href="https://github.com/ksarakis" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Profile</a>
+            <a href="https://ksarakis.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Website</a>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- <p>&copy; 2026 Konstantinos Sarakis. All rights reserved.</p> -->
+        </div>
+    </footer>
+
+</body>
+</html>
